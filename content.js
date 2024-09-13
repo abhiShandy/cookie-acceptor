@@ -1,6 +1,5 @@
 const commonSelectors = [
 	'button#onetrust-accept-btn-handler',
-	'div[aria-label="Sign in with Google"] div#close'
 	// Add more common selectors here
 ];
 

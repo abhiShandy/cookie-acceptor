@@ -1,15 +1,15 @@
 {
     "manifest_version": 3,
     "name": "Cookie Prompt Acceptor",
-    "version": "1.0",
-    "description": "Automatically accepts cookie prompts on certain websites",
+    "version": "1.1",
+    "description": "Automatically accepts cookie prompts on websites",
     "permissions": [],
-    "action": {
-      "default_popup": "popup.html"
-    },
     "content_scripts": [
       {
-        "matches": ["*://*.stackoverflow.com/*"],
+        "matches": [
+          "https://*/*",
+          "https://*"
+        ],
         "js": ["content.js"]
       }
     ],
